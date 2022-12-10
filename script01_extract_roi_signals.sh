@@ -21,10 +21,10 @@ while read line; do
     subjid=${subj: -4}
     echo $subjid
 
-    mask=$(ls $mask_dir/$roi/${subjid}_10mm.nii)
+    mask=$(ls $mask_dir/$roi/${subjid}_6mm.nii)
     # recreate mask to handle nan values in image:
     fslmaths $img -nan -abs -mul $mask -bin tmp_mask
-    fslmeants -i $img -o $out_dir/tmp_${subj}_${roi}_10mm.txt -m tmp_mask
+    fslmeants -i $img -o $out_dir/tmp_${subj}_${roi}_6mm.txt -m tmp_mask
     
 done < TEHC_filename.txt
 #done < NTHC_filename.txt
