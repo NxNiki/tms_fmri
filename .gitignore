@@ -1,0 +1,11 @@
+*.zip
+
+*.nii.gz
+
+./DS_Store
+
+*.png
+
+*.mat
+
+
