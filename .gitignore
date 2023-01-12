@@ -2,10 +2,23 @@
 
 *.nii.gz
 
-./DS_Store
+.DS_Store
 
 *.png
 
 *.mat
 
+*.node
+
+*.vtk
+
+*/*.csv
+
+*/*.png
+
+*/*.xls
+
+*/*.xlsx
+
+#*/
 
